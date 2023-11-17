@@ -1,0 +1,276 @@
+/* <!-- *Mood* -->
+Ini adalah css dari bagian/section mood
+<!-- *__________________________Mulai Dari Bagian Mood__________________________* -->
+*/
+
+/* 
+*____ Universal Selector ____*
+*/
+ion-icon {
+  pointer-events: none;
+}
+
+/* 
+*____ CSS Utama Dan Daur Ulang ____*
+*/
+
+.container-mood {
+  margin-top: 6rem;
+  padding-inline: 16px;
+  margin-bottom: -3rem;
+}
+
+.section-mood {
+  padding-block-end: 80px;
+}
+
+.title-mood1 {
+  background-color: hsl(0, 100%, 95%);
+  color: hsl(357, 96%, 73%);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: max-content;
+  padding: 8px 20px;
+  border-radius: 200px;
+}
+
+.title-mood {
+  color: hsl(209, 40%, 14%);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+#h2-mood {
+  font-size: 40px;
+}
+
+.h2-mood {
+  font-size: 3.6rem;
+}
+
+#h3-mood {
+  font-size: 26px;
+}
+
+#h3-mood-text {
+  font-size: 16px;
+}
+
+.h3-mood {
+  font-size: 2.4rem;
+}
+
+.section-subtitle-mood {
+  color: hsl(249, 95%, 63%);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.section-title-mood {
+  margin-block: 10px;
+}
+
+/* 
+*____ Bagian preloader Melthy ada disini (mood.css) ____*
+*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f1ff;
+  display: grid;
+  place-content: center;
+  z-index: 6;
+  transition: 250ms ease;
+}
+
+.preloader.remove {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.preloader .img {
+  animation: bounce 800ms ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.preloader-inner {
+  position: relative;
+}
+
+.preloader-inner::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 10px;
+  background-color: hsla(0, 0%, 0%, 0.039);
+  filter: blur(4px);
+  z-index: -1;
+  animation: dropShadow 800ms ease-in-out infinite alternate;
+}
+
+@keyframes dropShadow {
+  0% {
+    width: 10%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+/* 
+*____ Bagian Main Dari Mood Section ____*
+*/
+
+.mood .container-mood {
+  display: grid;
+  gap: 25px;
+}
+
+.mood-card:nth-child(2) {
+  background-color: hsla(40, 100%, 50%, 0.05);
+}
+
+.mood-card:nth-child(3) {
+  background-color: hsla(357, 94%, 63%, 0.05);
+}
+
+.mood-card:nth-child(4) {
+  background-color: hsla(249, 95%, 63%, 0.05);
+}
+
+.mood-card {
+  padding: 25px 20px;
+  border-radius: 20px;
+}
+
+.mood-card .card-title {
+  margin-block: 10px 5px;
+}
+
+/* 
+*____ Responsive Untuk Section Mood ____*
+*/
+
+/* *Responsive buat layar lebih dari 575px* */
+@media (min-width: 575px) {
+  .container-mood {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .mood .container-mood {
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+}
+
+/* *Responsive buat layar lebih dari 768px* */
+
+@media (min-width: 768px) {
+  .h2-mood {
+    font-size: 4rem;
+  }
+
+  .h3-mood {
+    font-size: 2.6rem;
+  }
+
+  .container-mood {
+    max-width: 720px;
+  }
+
+  :is(.section-subtitle-mood, .section-title-mood) {
+    /* text-align: center; */
+  }
+
+  .preloader .img {
+    width: 80px;
+  }
+
+  .mood .container-mood {
+    gap: 35px;
+  }
+
+  .mood-card {
+    padding: 40px 30px;
+  }
+
+  .mood-card .card-title {
+    margin-block: 20px 10px;
+  }
+}
+
+/* *Responsive buat layar lebih dari 992px* */
+
+@media (min-width: 992px) {
+  .container-mood {
+    max-width: 950px;
+  }
+  .mood .title-wrapper-mood {
+    padding-inline-end: 100px;
+  }
+}
+
+/* *Responsive buat layar lebih dari 1200px* */
+
+@media (min-width: 1200px) {
+  .h2-mood {
+    font-size: 4rem;
+  }
+
+  .container-mood {
+    max-width: 1150px;
+  }
+
+  .mood .container-mood {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mood .title-wrapper-mood {
+    grid-column: span 3;
+  }
+}
+
+/* *Responsive buat layar lebih dari 1400px* */
+
+@media (min-width: 1400px) {
+  .container-mood {
+    max-width: 1350px;
+  }
+  .mood .section-title-mood {
+    margin-block: 20px;
+  }
+
+  .mood .title-wrapper-mood {
+    grid-column: auto;
+    padding-inline-end: 0;
+  }
+
+  .mood .container-mood {
+    grid-template-columns: 1fr repeat(3, 0.9fr);
+    gap: 50px;
+  }
+
+  .mood-card:nth-child(3) {
+    margin-block-start: 80px;
+  }
+}

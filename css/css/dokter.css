@@ -1,0 +1,102 @@
+.h3-dokter {
+  margin: 10px 0;
+  color: #020064;
+}
+.h6-dokter {
+  margin: 5px 0;
+  color: #020064;
+  margin-top: 1.5rem;
+  font-size: 12px;
+  padding-bottom: 3.5rem;
+}
+
+.p-dokter {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.parents {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #c6c6c6;
+  padding-top: 30px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.card-container .pro {
+  color: #ffd233;
+  background-color: #fff4e8;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.card-container .round {
+  border: 1px solid #d1d0ff;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.span-dokter {
+  padding: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #d1d0ff;
+  border-radius: 3px;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.title-temukan-dokter {
+    display: flex;
+    justify-content: center;
+}
+
+button.primary {
+  display: flex;
+  background-color: #d1d0ff;
+  border: 1px solid #d1d0ff;
+  border-radius: 3px;
+  color: #231e39;
+  font-family: DM Sans, sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+button.primary.ghost {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  color: #020064;
+}
+
+@media (max-width: 991px) {
+  .parents {
+    flex-direction: column;
+  }
+
+  .card-container {
+    margin-bottom: 5rem;
+  }
+}

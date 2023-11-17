@@ -1,0 +1,542 @@
+:root {
+  --section-padding: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:focus-visible {
+  outline-offset: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7b4fe8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f6f2ff;
+}
+
+.container-cari-dokter {
+  padding-inline: 15px;
+}
+
+.section {
+  padding-block: 80px;
+}
+
+.bg-dark {
+  background-color: #f6f2ff;
+  color: hsl(212, 9%, 67%);
+}
+
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+}
+
+.h1,
+.h2,
+.h3 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.25;
+}
+
+.h1 {
+  color: #220953;
+  font-size: 3.8rem;
+  font-weight: 900;
+}
+
+.h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: 2rem;
+}
+
+.section-text {
+  font-size: 1.5rem;
+}
+
+.btn {
+  max-width: max-content;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 15px 35px;
+  border-radius: 8px;
+  transition: 0.25s ease;
+}
+
+.btn-primary {
+  background-color: #7b4fe8;
+  color: #220953;
+}
+
+.btn-primary:is(:hover, :focus) {
+  background-color: #220953;
+  color: #7b4fe8;
+  box-shadow: 0px 10px 24px hsla(12, 98%, 52%, 0.2);
+}
+
+.btn-secondary {
+  background-color: #220953;
+  color: #7b4fe8;
+}
+
+.btn-secondary:is(:hover, :focus) {
+  background-color: #f6f2ff;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.circle,
+.abs-img {
+  position: absolute;
+}
+
+.circle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -56%);
+  width: 100%;
+  z-index: -1;
+  animation: rotate360 15s linear infinite;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: translate(-50%, -56%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -56%) rotate(1turn);
+  }
+}
+
+.circle-2 {
+  animation-direction: reverse;
+}
+
+.hero-subtitle,
+.section-subtitle {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  /* max-width: max-content; */
+}
+
+.section-subtitle {
+  /* background-color: hsla(12, 98%, 52%, 0.1); */
+  color: #8d8d8d;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.section-title {
+  margin-block: 18px 35px;
+}
+
+.btn-link {
+  --color: #220953;
+
+  color: var(--color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  max-width: max-content;
+  transition: 0.25s ease;
+}
+
+.btn-link::before {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color);
+  transition: 0.25s ease;
+}
+
+.btn-link:is(:hover, :focus) {
+  --color: #7b4fe8;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: hsl(0, 0%, 80%);
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.has-scrollbar {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding-block-end: 30px;
+  scroll-snap-type: inline mandatory;
+}
+
+.scrollbar-item {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  height: 10px;
+}
+
+.has-scrollbar::-webkit-scrollbar-track,
+.has-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #7b4fe8;
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: calc(25% - 25px);
+}
+
+.hero {
+  color: hsl(214, 15%, 62%);
+  text-align: center;
+  padding-block-start: calc(var(--section-padding) + 80px);
+  padding-block-end: 0;
+  overflow: hidden;
+}
+
+.hero::after {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 240px;
+  background-color: #7b4fe8;
+  z-index: -1;
+}
+
+.hero-content {
+  margin-block-end: 90px;
+}
+
+.hero-subtitle {
+  background-color: hsl(0, 0%, 100%, 0.1);
+  color: #220953;
+  margin-inline: auto;
+  padding: 5px;
+  padding-inline-end: 15px;
+  border-radius: 8px;
+}
+
+.hero-subtitle .strong {
+  display: inline-block;
+  background-color: #7b4fe8;
+  padding: 2px 15px;
+  margin-inline-end: 15px;
+  border-radius: 5px;
+}
+
+.hero-title {
+  margin-block: 30px 8px;
+}
+
+.hero .section-text {
+  margin-block-end: 40px;
+}
+
+.hero .btn {
+  margin-inline: auto;
+}
+
+.hero-banner {
+  position: relative;
+}
+
+.abs-img-0 {
+  top: 250px;
+  right: 350px;
+  width: 190px;
+}
+
+.abs-img-1 {
+  top: 20px;
+  right: -50px;
+  width: 190px;
+}
+
+.abs-img-2 {
+  bottom: -50px;
+  left: -40px;
+  width: 280px;
+}
+
+.hero .abs-img {
+  animation: move 3s linear infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-5px, 10px);
+  }
+  100% {
+    transform: translate(5px, 20px);
+  }
+}
+
+.hero .abs-img-2 {
+  animation-direction: alternate-reverse;
+}
+
+.back-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  background-color: #7b4fe8;
+  color: #f6f2ff;
+  font-size: 20px;
+  padding: 11px;
+  border-radius: 50%;
+  border: 2px solid #f6f2ff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.25s ease;
+  z-index: 4;
+}
+
+.back-top-btn.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 575px) {
+  .disnone {
+    display: none;
+  }
+}
+
+/**
+ * responsive untuk layar lebih dari 575px
+ */
+
+@media (min-width: 575px) {
+  .h1 {
+    font-size: 5.8rem;
+  }
+
+  .h2 {
+    font-size: 4rem;
+  }
+
+  .container-cari-dokter {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .hero-subtitle,
+  .section-subtitle {
+    font-size: 1.8rem;
+  }
+  .container-cari-dokter {
+    max-width: unset;
+    padding-inline: 30px;
+  }
+  .hero-content {
+    padding-inline: 40px;
+  }
+
+  .hero-subtitle .strong {
+    padding-block: 6px;
+  }
+
+  .hero::after {
+    height: 340px;
+  }
+
+  .abs-img-1 {
+    top: 130px;
+    right: -10px;
+    width: 230px;
+  }
+
+  .abs-img-2 {
+    bottom: 20px;
+    left: -40px;
+    width: 310px;
+  }
+}
+
+/**
+ * responsive untuk layar lebih dari 768px
+ */
+
+@media (min-width: 768px) {
+  :root {
+    /**
+     * typography
+     */
+
+    --fs-2: 4.5rem;
+  }
+  .container-cari-dokter {
+    max-width: 720px;
+  }
+
+  .scrollbar-item {
+    min-width: calc(50% - 12.5px);
+  }
+
+  .hero-banner {
+    max-width: max-content;
+    margin-inline: auto;
+  }
+
+  .abs-img-1 {
+    top: 140px;
+    right: 50px;
+  }
+}
+
+/**
+ * responsive untuk layar lebih dari 992px
+ */
+
+@media (min-width: 992px) {
+  .container-cari-dokter,
+  .container-cari-dokter {
+    max-width: 960px;
+  }
+
+  .hero {
+    background-size: contain;
+    text-align: left;
+  }
+
+  .hero .container-cari-dokter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .hero-content {
+    padding-inline: 0;
+    margin-block-end: 0;
+  }
+
+  .hero-subtitle,
+  .hero .btn {
+    margin-inline: 0;
+  }
+
+  .hero::after {
+    width: 500px;
+    height: 200%;
+    left: 70%;
+    right: 0;
+    top: -30rem;
+    transform: rotate(7deg);
+  }
+}
+
+/**
+ * responsive untuk layar lebih dari 1200px
+ */
+
+@media (min-width: 1200px) {
+  :root {
+    --section-padding: 120px;
+  }
+  .h1 {
+    font-size: 7rem;
+  }
+  .h2 {
+    font-size: 4.8rem;
+  }
+  .h3 {
+    font-size: 2.2rem;
+  }
+  .hero-subtitle,
+  .section-subtitle {
+    font-size: 2rem;
+  }
+
+  .container-cari-dokter,
+  .container-cari-dokter {
+    max-width: 1140px;
+  }
+
+  .btn {
+    padding: 18px 45px;
+    border-radius: 10px;
+  }
+
+  .section-subtitle {
+    --fs-5: 2.2rem;
+  }
+
+  .has-scrollbar {
+    gap: 30px;
+  }
+
+  .scrollbar-item {
+    min-width: calc(33.33% - 20px);
+  }
+  .hero::after {
+    width: 520px;
+  }
+
+  .hero .section-text {
+    font-size: 1.8rem;
+  }
+
+  .abs-img-1 {
+    top: 170px;
+    right: -50px;
+    width: 260px;
+  }
+
+  .abs-img-2 {
+    bottom: 60px;
+    left: -80px;
+    width: 360px;
+  }
+}

@@ -1,0 +1,236 @@
+/* <!-- *Video* -->
+Ini adalah css dari bagian/section dari video
+<!-- *__________________________Mulai Dari Bagian video__________________________* -->
+*/
+
+/* 
+*____ Universal Selector ____*
+*/
+li {
+  list-style: none;
+}
+
+img,
+ion-icon {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+/* 
+*____ CSS Utama dan Daur Ulang ____*
+*/
+.container {
+  padding-inline: 15px;
+}
+
+.section-video {
+  padding-block: 75px;
+}
+
+.shape {
+  position: absolute;
+  display: none;
+}
+
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  position: absolute;
+  content: "";
+}
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: hsl(0, 0%, 80%);
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-list-video {
+  display: grid;
+  gap: 30px;
+}
+
+.stats-card {
+  background-color: hsla(var(--color), 0.1);
+}
+
+/* 
+*____ Bagian dari video ____*
+*/
+.video {
+  background-image: url("/assets/images/wave/wave3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.video-banner {
+  position: relative;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 120px;
+}
+
+.video .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(241, 88%, 60%, 0.8);
+  font-size: 30px;
+  padding: 16px;
+  color: #f7f8fc;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0.5);
+  z-index: 1;
+  animation: pulse 3s ease infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 20px transparent;
+  }
+}
+
+.video-banner::after {
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+/* 
+*____ Bagian status melthy____*
+*/
+.stats-card {
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.stats-card .card-title {
+  color: hsl(var(--color));
+  font-size: 2.2rem;
+  line-height: 1.1;
+}
+
+.stats-card .card-text {
+  color: hsl(0, 0%, 9%);
+  text-transform: uppercase;
+}
+
+/* 
+*____ Bagian Responsive untuk melthy____*
+*/
+
+/* *responsive untuk layar lebih dari 575px* */
+
+@media (min-width: 575px) {
+  .container {
+    max-width: 520px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .grid-list-video {
+    grid-template-columns: 1fr 1fr;
+  }
+  .video .play-btn {
+    padding: 25px;
+  }
+  .stats-card {
+    padding: 40px 30px;
+  }
+}
+
+/* *responsive untuk layar lebih dari 768px* */
+
+@media (min-width: 768px) {
+  .stats-card .card-title {
+    font-size: 2.8rem;
+  }
+  .container {
+    max-width: 720px;
+  }
+
+  .-video {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* *responsive untuk layar lebih dari 992px* */
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .grid-list-video {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  :is(.course, .blog) .grid-list-video {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .video-banner {
+    max-width: 75%;
+    margin-inline: auto;
+  }
+}
+
+/* *responsive untuk layar lebih dari 1200px* */
+
+@media (min-width: 1200px) {
+  .section-video {
+    padding-block: 120px;
+  }
+
+  .container {
+    max-width: 1185px;
+  }
+
+  .shape {
+    display: block;
+  }
+
+  .video-card {
+    position: relative;
+  }
+
+  .video-shape-1 {
+    top: -50px;
+    left: 0;
+  }
+
+  .video-shape-2 {
+    top: -80px;
+    right: 120px;
+    z-index: 1;
+  }
+}

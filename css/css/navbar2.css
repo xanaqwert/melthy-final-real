@@ -1,0 +1,340 @@
+/* <!-- *Navbar* -->
+Ini adalah css dari bagian/section NAVBAR
+<!-- *__________________________Mulai Dari Bagian Navbar__________________________* -->
+*/
+
+/* 
+*____ Universal Selector ____*
+*/
+a,
+img,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body.nav-active {
+  overflow: hidden;
+}
+
+/* 
+*____ CSS Utama dan Daur Ulang ____*
+*/
+.container-navbar {
+  padding-inline: 16px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-link {
+  font-size: 2rem;
+  transition: 0.25s ease;
+}
+
+.social-link:is(:hover, :focus-visible) {
+  transform: translateY(-3px);
+}
+
+/* 
+*____ CSS Utama Dari Data-reveal, atau animated on scroll murni ____*
+*/
+[data-reveal] {
+  opacity: 0;
+  transition: 0.75s ease;
+}
+
+[data-reveal="top"] {
+  transform: translateY(-30px);
+}
+
+[data-reveal="bottom"] {
+  transform: translateY(30px);
+}
+
+[data-reveal="left"] {
+  transform: translateX(-30px);
+}
+
+[data-reveal="right"] {
+  transform: translateX(30px);
+}
+
+[data-reveal].revealed {
+  transform: translate(0);
+  opacity: 1;
+}
+
+/* 
+*____ Bagian Buttonnya ____*
+*/
+.logo {
+  color: #220953;
+  margin-right: -4rem;
+  font-size: 25.6px;
+  font-weight: 700;
+}
+
+.button-navbar {
+  background: #000000;
+  border-radius: 1000px;
+  padding: 15px 35px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 15px/1 "Open Sans", sans-serif;
+  text-align: center;
+}
+
+/* 
+*____ Bagian Utama Dari Header/Navbar ____*
+*/
+.header {
+  position: absolute;
+  top: -1px;
+  background-color: hsla(0, 0%, 100%, 1);
+  width: 90%;
+  margin: auto;
+  padding-block: 20px;
+  box-shadow: 0 0 20px hsla(216, 14%, 14%, 0.05);
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  z-index: 4;
+}
+
+.header.active {
+  position: fixed;
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.header .container-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-open-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 2.5rem;
+  color: hsla(214, 15%, 21%, 1);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  background-color: hsla(216, 14%, 14%, 1);
+  color: hsla(0, 0%, 100%, 1);
+  max-width: 300px;
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  padding-block-end: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 2;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar.active {
+  visibility: visible;
+  transform: translateX(300px);
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-close-btn {
+  background-color: hsla(0, 0%, 100%, 0.08);
+  color: hsla(0, 0%, 100%, 1);
+  font-size: 2rem;
+  padding: 6px;
+  border-radius: 50%;
+  transition: 0.25s ease;
+}
+
+.nav-close-btn ion-icon {
+  --ionicon-stroke-width: 50px;
+}
+
+.nav-close-btn:is(:hover, :focus-visible) {
+  background-color: hsla(0, 0%, 100%, 0.12);
+}
+
+.navbar-list {
+  font-size: 18px;
+  margin-block-end: auto;
+  margin: auto;
+}
+
+.navbar-link {
+  font-weight: 700;
+  padding-block: 6px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120vh;
+  background-color: hsla(216, 14%, 14%, 1);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+.overlay.active {
+  pointer-events: all;
+  opacity: 0.8;
+}
+
+/* *responsive untuk layar lebih dari 575px* */
+
+@media (min-width: 575px) {
+  .container-navbar {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+/* *responsive untuk layar lebih dari 768px* */
+
+@media (min-width: 768px) {
+  .container-navbar {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-active {
+    left: -340px !important;
+  }
+}
+
+/* *responsive untuk layar lebih dari 992px* */
+
+@media (max-width: 991px) {
+  .navbar-active {
+    left: -350px;
+  }
+  .header {
+    margin-left: 5%;
+    padding-block: 15px;
+  }
+  .navbar-list {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --section-padding: 120px;
+  }
+
+  .container-navbar {
+    max-width: 960px;
+  }
+
+  .nav-open-btn,
+  .navbar-top,
+  .navbar .wrapper,
+  .overlay {
+    display: none;
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .navbar-list {
+    display: flex;
+    gap: 36px;
+    margin-inline: auto;
+  }
+
+  .navbar-link {
+    color: hsla(219, 22%, 26%, 1);
+    transition: 0.25s ease;
+  }
+
+  .navbar-link:is(:hover, :focus-visible) {
+    color: hsla(344, 53%, 62%, 1);
+  }
+
+  .navbar .social-link {
+    color: hsla(219, 22%, 26%, 1);
+    font-size: 1.8rem;
+  }
+
+  .header {
+    margin-top: -5rem;
+    top: 45px;
+    /* width: 78%; */
+    left: 50%;
+    transform: translateX(-50%);
+    padding-inline: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+
+  .header.active {
+    /* top: 1; */
+    left: 5%;
+    /* width: 78%; */
+    max-width: 1300px !important;
+    border-bottom-right-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+    border-radius: 0;
+  }
+
+  .container-navbar {
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
+    gap: 100px;
+  }
+}
+
+/* *responsive untuk layar lebih dari 1200px* */
+
+@media (min-width: 1200px) {
+  .container-navbar,
+  .header {
+    max-width: 1140px;
+  }
+}
+
+/* *responsive untuk layar lebih dari 1400px* */
+
+@media (min-width: 1400px) {
+  .container-navbar,
+  .header {
+    max-width: 1320px;
+  }
+}

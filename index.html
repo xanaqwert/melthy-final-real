@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- *Buat favicon* -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/Logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- #########################################################################-->
+
+    <!-- *Link Untuk Icon* -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+    />
+
+    <!-- #########################################################################-->
+
+    <!-- *Link Eksternal Css* -->
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/aktifitas.css" />
+    <link rel="stylesheet" href="css/chat.css" />
+    <link rel="stylesheet" href="css/gejala.css" />
+    <link rel="stylesheet" href="css/relawan.css" />
+    <link rel="stylesheet" href="css/main-home.css" />
+    <link rel="stylesheet" href="css/mood.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/tambahan.css" />
+    <link rel="stylesheet" href="css/video.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- #########################################################################-->
+
+    <!-- *Link Buat Google Fonts* -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- *Buat preload* -->
+    <link rel="preload" as="image" href="/assets/images/Logo.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/person/sahl-client.jpeg"
+    />
+    <link rel="preload" as="image" href="/assets/images/wave/hero-bg.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/assets/images/asset & emoji/melthy-main.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/assets/images/asset & emoji/melthy-main.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/asset & emoji/img1.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/asset & emoji/img2.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/asset & emoji/img3.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/asset & emoji/Vector 4.png"
+    />
+
+    <!-- *Title & Deskripsi* -->
+    <title>Melthy 💜 - Layanan Kesehatan Mentals</title>
+    <meta name="title" content="Melthy - Layanan Kesehatan Mental" />
+    <meta
+      name="description"
+      content="Melthy adalah layanan konseling dan terapi kesehatan mental daring & luring yang menyediakan akses mudah ke bantuan profesional bagi mereka yang membutuhkan dukungan mental dan emosional."
+    />
+  </head>
+
+  <body>
+    <!-- *Preloader Melthy* -->
+    <div class="preloader" data-preloader>
+      <div class="preloader-inner">
+        <img
+          src="./assets/images/Logo.png"
+          width="20%"
+          height="auto"
+          alt=""
+          class="img"
+          style="margin: auto"
+        />
+      </div>
+    </div>
+
+    <!-- #########################################################################-->
+
+    <!-- *Chat Box* -->
+    <!-- *__________________________Mulai Dari Bagian Chat Box__________________________* -->
+    <section class="chat-box-index">
+      <button class="chat-btn chat-box-index" id="button-chat">
+        <i class="material-icons chat-box-index"> comment </i>
+      </button>
+
+      <div class="chat-popup chat-box-index">
+        <div class="badge chat-box-index">1</div>
+        <div class="chat-area chat-box-index">
+          <div class="income-msg chat-box-index">
+            <img
+              src="assets/images/person/yogi-customer-service.png"
+              class="avatar chat-box-index"
+              alt=""
+            />
+            <span class="msg chat-box-index">
+              Selamat datang di melthy!, Apa yang bisa kami bantu?</span
+            >
+          </div>
+        </div>
+
+        <div class="input-area chat-box-index">
+          <input type="text" class="chat-box-index" />
+          <button id="emoji-btn" class="button-chat chat-box-index">
+            &#127773;
+          </button>
+          <button class="submit chat-box-index" id="button-chat">
+            <i class="material-icons"> send</i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- *__________________________Akhir Dari Bagian Chat Box__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Navbar* -->
+    <!-- *__________________________Mulai Dari Bagian Navbar__________________________* -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo"> 💜 Melthy </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo" style="color: white"> 💜 Melthy </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#about" class="navbar-link">Layanan</a>
+            </li>
+
+            <li>
+              <a href="#review" class="navbar-link">Klinik</a>
+            </li>
+
+            <li>
+              <a href="#solution" class="navbar-link">Perawatan</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">|</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">EN</a>
+            </li>
+          </ul>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li style="margin-right: 1rem">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="/faq.html" class="social-link">
+                <button class="button-navbar">Bantuan?</button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+    <!-- *__________________________Akhir Dari Bagian Navbar__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Main* -->
+    <!-- *__________________________Mulai Dari Bagian Main__________________________* -->
+    <main class="main">
+      <section
+        class="home__main section wave-no-repeat"
+        id="home__main"
+        style="background-image: url('./assets/images/wave/hero-bg.png')"
+      >
+        <div class="home__main__container container__home grid">
+          <div class="home__main__data" data-reveal="left">
+            <h1 class="home__main__title">
+              Mental
+              <div class="home__main__title-box">
+                Itu
+                <div class="transform-rekan">Rekan</div>
+              </div>
+              Bagi Melthy
+
+              <!-- <img src="assets/img/star-img.svg" alt="home image" /> -->
+            </h1>
+
+            <p class="home__main__description">
+              Melthy adalah sebuah layanan kesehatan yang berdedikasi untuk
+              mempromosikan dan mendukung kesehatan mental.
+
+              <!-- <img src="assets/img/circle-img.svg" alt="home image" /> -->
+            </p>
+
+
+            <a href="/main app/index.html" class="button">
+              Hubungi Kami <i class="ri-arrow-right-line"></i>
+            </a>
+
+            <div class="home__main__box">
+              <div>
+                <!-- <h3 class="h3__title">300+</h3>
+                <span>Terbantu</span> -->
+              </div>
+
+              <div>
+                <!-- <h3 class="h3__title">40+</h3>
+                <span>Komentar</span> -->
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="assets/images/asset & emoji/melthy-main.png"
+            alt="home image"
+            class="home__main__img"
+            data-reveal="right"
+          />
+        </div>
+      </section>
+    </main>
+    <!-- *__________________________Akhir Dari Bagian Main__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Mood* -->
+    <!-- *__________________________Mulai Dari Bagian Mood__________________________* -->
+    <section class="section-mood mood" aria-label="mood">
+      <div class="container-mood">
+        <div class="title-wrapper-mood" data-reveal="left">
+          <p id="title-mood1" class="title-mood1">😄 Mood</p>
+          <h2 id="h2-mood" class="h2-mood title-mood section-title-mood">
+            Ketahui Mood <span style="color: #423ff3">Kamu</span>
+          </h2>
+          <p class="section-text" style="color: #0a7af9; font-weight: 500">
+            Ketahui Lebih Lanjut ➜
+          </p>
+        </div>
+
+        <div class="mood-card" data-reveal="right">
+          <div class="card-icon">
+            <img
+              src="/assets/images/asset & emoji/Party Face Emoji.png"
+              width="60"
+              height="60"
+              loading="lazy"
+              alt="icon"
+            />
+          </div>
+          <h3 id="h3-mood" class="h3-mood title-mood card-title">Senang</h3>
+          <p id="h3-mood-text" class="card-text">
+            kamu merasa hidupmu baik-baik saja dan kamu adalah orang yang
+            normal.
+          </p>
+        </div>
+
+        <div class="mood-card" data-reveal="left">
+          <div class="card-icon">
+            <img
+              src="/assets/images/asset & emoji/Very Sad Emoji.png"
+              width="60"
+              height="60"
+              loading="lazy"
+              alt="icon"
+            />
+          </div>
+          <h3 id="h3-mood" class="h3-mood title-mood card-title">Cemas</h3>
+          <p id="h3-mood-text" class="card-text">
+            Anda merasakan kecemasan yang tak ada habisnya terhadap orang lain.
+          </p>
+        </div>
+
+        <div class="mood-card" data-reveal="right">
+          <div class="card-icon">
+            <img
+              src="/assets/images/asset & emoji/Angry Emoji.png"
+              width="60"
+              height="60"
+              loading="lazy"
+              alt="icon"
+            />
+          </div>
+          <h3 id="h3-mood" class="h3-mood title-mood card-title">Marah</h3>
+          <p id="h3-mood-text" class="card-text">
+            Kamu tidak bisa mengontrol emosi mu.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- *__________________________Akhir Dari Bagian Mood__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *About* -->
+    <!-- *__________________________Mulai Dari Bagian About__________________________* -->
+    <section
+      class="section about wave-no-repeat2"
+      id="about"
+      aria-label="about"
+      style="background-image: url('./assets/images/wave/wave.svg')"
+      data-reveal
+    >
+      <div class="container">
+        <figure class="about-banner">
+          <div class="img-holder" style="--width: 520; --height: 370">
+            <img
+              src="./assets/images/banner/about-melthy.png"
+              width="520"
+              height="370"
+              loading="lazy"
+              alt="about banner"
+              class="img-cover"
+            />
+            <!-- source gambar dari "./assets/images/banner/about-melthy.png" https://www.sisternet.co.id/assets/images/mfcettg14xwc6bpwfay5.jpg -->
+          </div>
+
+          <img
+            src="./assets/images/shape/shape-halley-final.png"
+            width="340"
+            height="520"
+            loading="lazy"
+            alt=""
+            class="shape about-shape-1"
+          />
+
+          <!-- <img
+            src="./assets/images/megumin(1).png"
+            width="300"
+            height="300"
+            loading="lazy"
+            alt=""
+            class="shape about-shape-2"
+          /> -->
+          <!-- 
+          <img
+            src="./assets/images/about-shape-3.png"
+            width="722"
+            height="528"
+            loading="lazy"
+            alt=""
+            class="shape about-shape-3"
+          /> -->
+        </figure>
+
+        <div class="about-content" data-reveal>
+          <!-- <p class="section-subtitle">About Us</p> -->
+
+          <h2 class="h2 section-title about__title">
+            Apa yang bisa kami <span class="span">bantu?</span>
+          </h2>
+
+          <p class="section-text about__title p">
+            Kami sudah membantu banyak pasien yang terkena penyakit mental,
+            biasanya penyakit ini sering dimiliki oleh kaum muda atau
+            <span style="font-style: italic">gen z</span> yaitu.
+          </p>
+
+          <ul class="about-list">
+            <li class="about-item">
+              <ion-icon
+                name="checkmark-done-outline"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="span">Stress berkelanjutan</span>
+            </li>
+
+            <li class="about-item">
+              <ion-icon
+                name="checkmark-done-outline"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="span">Anxiety Berlebih</span>
+            </li>
+
+            <li class="about-item">
+              <ion-icon
+                name="checkmark-done-outline"
+                aria-hidden="true"
+              ></ion-icon>
+
+              <span class="span">Mental Disorder</span>
+            </li>
+          </ul>
+
+          <img
+            src="./assets/images/shape/about-shape-4.png"
+            width="100"
+            height="100"
+            loading="lazy"
+            alt=""
+            class="shape about-shape-4"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- *__________________________Akhir Dari Bagian About__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Video* -->
+    <!-- *__________________________Mulai Dari Bagian Video__________________________* -->
+    <section
+      class="video has-bg-image"
+      aria-label="video"
+      style="padding-top: 5rem"
+    >
+      <div
+        class="review-title"
+        style="margin-bottom: 2rem; margin-top: -3rem"
+        data-reveal
+      >
+        Semua <span style="color: #6765f7">Menyetujui</span>
+      </div>
+      <div class="container" data-reveal>
+        <div class="video-card">
+          <div
+            class="video-banner img-holder has-after"
+            style="--width: ; --height: "
+          >
+            <img
+              src="assets/video/Penjelasan-Melthy.svg"
+              width="970"
+              height="550"
+              loading="lazy"
+              alt="Ini Buat Video"
+              class="img-cover"
+            />
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <img
+            src="./assets/images/shape/shape-star.png"
+            width="155    "
+            height="154"
+            loading="lazy"
+            alt=""
+            class="shape video-shape-2"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- *__________________________Akhir Dari Bagian Video__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Status* -->
+    <!-- *__________________________Mulai Dari Bagian Status__________________________* -->
+    <section class="section-video stats" aria-label="stats">
+      <div class="container">
+        <ul class="grid-list-video">
+          <li data-reveal="left">
+            <div class="stats-card" style="--color: 170, 75%, 41%">
+              <h3 class="card-title">28K+</h3>
+
+              <p class="card-text">Orang Terbantu</p>
+            </div>
+          </li>
+
+          <li data-reveal="right">
+            <div class="stats-card" style="--color: 351, 83%, 61%">
+              <h3 class="card-title">31K+</h3>
+
+              <p class="card-text">Orang Mendaftar</p>
+            </div>
+          </li>
+
+          <li data-reveal="left">
+            <div class="stats-card" style="--color: 260, 100%, 67%">
+              <h3 class="card-title">100%</h3>
+
+              <p class="card-text">Sembuh Total</p>
+            </div>
+          </li>
+
+          <li data-reveal="right">
+            <div class="stats-card" style="--color: 42, 94%, 55%">
+              <h3 class="card-title">15+</h3>
+
+              <p class="card-text">Diakui oleh rumah sakit</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- *__________________________Akhir Dari Bagian Status__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Review* -->
+    <!-- *__________________________Mulai Dari Bagian Review__________________________* -->
+    <div id="review" class="review" style="margin-top: 2rem">
+      <div class="review-container">
+        <div class="review-title" data-reveal>
+          Apa yang mereka <span style="color: #6765f7">Katakan</span>
+        </div>
+        <div class="card-container" data-reveal="right">
+          <div class="cards-container">
+            <div class="review-card-item">
+              <div class="profile-card">
+                <div class="profile-img">
+                  <img
+                    src="assets/images/review/sheva-developer.png"
+                    alt=""
+                    style="width: 230px"
+                  />
+                </div>
+                <div class="profile-name">Muhammad Sheva Atallah</div>
+                <div class="profile-job">Software Engineer Google</div>
+              </div>
+              <div class="content-card">
+                " Saya awalnya tidak tahu cara mengatasi stress ini bagaimana,
+                saya cari di online dan menemukan melthy, awalnya ragu, tapi
+                setelah saya coba, ternyata dokternya baik dan profesional,
+                stress yang sudah lama saya alami akhirnya bisa sembuh. "
+              </div>
+            </div>
+          </div>
+          <div class="cards-container">
+            <div class="review-card-item">
+              <div class="profile-card">
+                <div class="profile-img">
+                  <img
+                    src="assets/images/review/sahl-developer.png"
+                    alt=""
+                    style="width: 230px"
+                  />
+                </div>
+                <div class="profile-name">Muhammad Sahl Harits</div>
+                <div class="profile-job">Mahasiswa Universitas Indonesia</div>
+              </div>
+              <div class="content-card">
+                " Dokter dan pengurusnya baik, ramah juga, cocok buat menjadi
+                tempat curhat, mereka juga memberikan banyak solusi untuk
+                masalah kita, yang paling penting mereka selalu fast respon. "
+              </div>
+            </div>
+          </div>
+          <div class="cards-container">
+            <div class="review-card-item">
+              <div class="profile-card">
+                <div class="profile-img">
+                  <img
+                    src="assets/images/review/umar-desainer.png"
+                    alt=""
+                    style="width: 230px"
+                  />
+                </div>
+                <div class="profile-name">Umar Fathan Al Faruq</div>
+                <div class="profile-job">Desainer UI/UX Tokopedia</div>
+              </div>
+              <div class="content-card">
+                " BAGUS BANGETTT, Saya kira awalnya cuman tempat konsultasi ecek
+                ecek, ternyata setelah di coba, dokter ama pengurusnya
+                profesional bangett, kayak lemah lembut, tapi bisa memberikan
+                solusi yang baik untuk masalah kesehatan mental sayaa. "
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *__________________________Akhir Dari Bagian Review__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Gejala* -->
+    <!-- *__________________________Mulai Dari Bagian Gejala__________________________* -->
+    <div class="gejala">
+      <div class="gejala-container">
+        <div class="gejala-first" data-reveal>
+          <div class="gejala-title">
+            Kenali Gejala Kesehatan<span> Mental mu !</span>
+          </div>
+          <div class="gejala-desc-container">
+            <div class="gejala-desc">
+              <p>
+                Kesehatan jiwa atau sebutan lainnya kesehatan mental adalah
+                kesehatan yang berkaitan dengan kondisi emosi, kejiwaan, dan
+                psikis seseorang<span id="dots">...</span
+                ><span id="more"
+                  >. Perlu kamu ketahui bahwa peristiwa dalam hidup yang
+                  berdampak besar pada kepribadian dan perilaku seseorang bisa
+                  berpengaruh pada kesehatan mentalnya. <br /><br />
+                  Misalnya, pelecehan saat usia dini, stres berat dalam jangka
+                  waktu lama tanpa adanya penanganan, dan mengalami kekerasan
+                  dalam rumah tangga. Berbagai kondisi tersebut bisa membuat
+                  kondisi kejiwaan seseorang terganggu, sehingga muncul gejala
+                  gangguan kesehatan jiwa.
+                </span>
+              </p>
+            </div>
+            <div class="gejala-learn" onclick="myFunction()" id="myBtn">
+              Baca Lebih Banyak
+            </div>
+          </div>
+        </div>
+
+        <div class="gejala-card">
+          <div class="gejala-card-item" data-reveal="left">
+            <img src="assets/images/asset & emoji/Vector1.png" alt="" />
+            <div class="emoji-container" style="background-color: #fefaed">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#f17f7b"
+                class="bi bi-emoji-frown"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"
+                />
+              </svg>
+            </div>
+            <div class="gejala-card-title">Trust Issue</div>
+            <div class="gejala-card-desc">
+              kamu telah kehilangan kepercayaan pada orang yang kamu sayangi
+              karena kamu telah dikecewakan berkali-kali
+            </div>
+
+            <div class="gejala-card-learn" onclick="clickaja()">
+              Pelajari Lebih Lanjut
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="gejala-card-item" data-reveal>
+            <img src="assets/images/asset & emoji/Vector2.png" alt="" />
+            <div class="emoji-container" style="background-color: #edf9fe">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#495cf2"
+                class="bi bi-emoji-neutral"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M4 10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5zm3-4C7 5.672 6.552 5 6 5s-1 .672-1 1.5S5.448 8 6 8s1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5S9.448 8 10 8s1-.672 1-1.5z"
+                />
+              </svg>
+            </div>
+            <div class="gejala-card-title">Insecure</div>
+            <div class="gejala-card-desc">
+              kamu tidak percaya diri terhadap orang lain karena kamu merasa
+              paling buruk padahal kamu baik-baik saja
+            </div>
+            <div class="gejala-card-learn" onclick="clickajaa()">
+              Pelajari Lebih Lanjut
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="gejala-card-item" data-reveal="right">
+            <img src="assets/images/asset & emoji/Vector3.png" alt="" />
+            <div class="emoji-container" style="background-color: #fceffd">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#9e4af2"
+                class="bi bi-emoji-angry"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z"
+                />
+              </svg>
+            </div>
+            <div class="gejala-card-title">Overthinking</div>
+            <div class="gejala-card-desc">
+              Tidak seharusnya kamu takut dan overthinking dengan kegagalan
+              karena itu merupakan hal yang normal.
+            </div>
+            <div class="gejala-card-learn" onclick="clickajaaa()">
+              Pelajari Lebih Lanjut
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="gejala-card-item">
+            <img src="assets/images/asset & emoji/Vector 4.png" alt="" />
+            <div class="emoji-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#f4f9fd"
+                class="bi bi-emoji-dizzy"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M9.146 5.146a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zm-5 0a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 1 1 .708.708l-.647.646.647.646a.5.5 0 1 1-.708.708L5.5 7.207l-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zM10 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"
+                />
+              </svg>
+            </div>
+            <div class="gejala-card-title">Mental Illness</div>
+            <div class="gejala-card-desc">
+              Kondisi ini bisa terjadi sesekali atau berlangsung dalam waktu
+              yang lama. Mental illness ada banyak jenisnya.
+            </div>
+            <div class="gejala-card-learn" onclick="clickajaaaa()">
+              Pelajari Lebih Lanjut
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>
+                Gangguan mental trust issue, atau yang lebih dikenal sebagai
+                gangguan kepercayaan, merupakan kondisi psikologis yang
+                memengaruhi cara seseorang mempercayai orang lain dan diri
+                mereka sendiri. Masalah ini memang sering dianggep sepele tapi
+                tahu kah kamu ? bahwa sering merasa waspada terhadap niat orang
+                lain dan cenderung menduga-duga motif tersembunyi di balik
+                tindakan orang lain. Trust issue bisa berkembang akibat
+                pengalaman traumatis, penipuan, atau pengkhianatan masa lalu,
+                dan hal ini dapat mengganggu hubungan interpersonal mereka serta
+                kualitas hidup secara keseluruhan.
+              </p>
+            </div>
+          </div>
+          <div id="myModall" class="modall">
+            <!-- Modal content -->
+            <div class="modall-content">
+              <span class="closee">&times;</span>
+              <p>
+                Gaes kalian tahu ga sih apa itu insecure dan bahayanya ? jadi
+                insecure, atau yang lebih dikenal sebagai gangguan kecemasan
+                sosial, merupakan kondisi psikologis yang melibatkan perasaan
+                yang berlebihan dan persisten akan ketidakamanan diri saat
+                berinteraksi dengan orang lain atau dalam situasi sosial
+                tertentu. Nah banyak orang menganggap masalah ini dengan sepele
+                padahal jika terlalu berlebihan dipikirkan tentu saja akan
+                sangat mengganggu kehidupan sehari-hari seseorang, menghambat
+                kemampuan mereka untuk membangun hubungan sosial yang sehat,
+                berkembang dalam karier, atau bahkan melakukan aktivitas
+                sehari-hari.
+              </p>
+            </div>
+          </div>
+          <div id="myModalll" class="modalll">
+            <!-- Modal content -->
+            <div class="modalll-content">
+              <span class="closeee">&times;</span>
+              <p>
+                Nah selanjutnya ada yang namanya overthinking , masalah ini
+                lebih dikenal sebagai kecemasan berlebihan, adalah kondisi
+                psikologis yang ditandai oleh pola pikir yang terus-menerus
+                berputar dalam kekhawatiran dan keraguan berlebihan. Orang yang
+                mengalami gangguan ini biasanya mereka selalu berfikir hal yang
+                negatif dan mereka terjebak didalam pemikiran negatif tersebut ,
+                gangguan ini semakin parah jika diikuti dengan penyakit GERD
+                Anxiety.
+              </p>
+            </div>
+          </div>
+          <div id="myModallll" class="modallll">
+            <!-- Modal content -->
+            <div class="modallll-content">
+              <span class="closeeee">&times;</span>
+              <p>
+                Yang terakhir , ini yang paling berbahaya teman - teman jadi
+                Mental Ilness adalah kondisi kesehatan mental yang memengaruhi
+                pikiran, perasaan, dan perilaku seseorang. Nah kenapa gangguan
+                ini paling berbahaya karena gangguan ini meliputi kecemasan,
+                depresi, skizofrenia, hingga gangguan bipolar.Gangguan ini dapat
+                memengaruhi seseorang dalam berbagai cara, mengubah cara
+                penderitanya berinteraksi dengan dunia sekitarnya, serta
+                mengganggu fungsi kegiatan sehari-hari .
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *__________________________Akhir Dari Bagian Gejala__________________________* -->
+
+    <!-- #########################################################################
+
+    <!-- *Solusi* -->
+    <!-- *__________________________Mulai Dari Bagian Solusi__________________________ -->
+    <div id="solution" class="solution" style="margin-top: 1rem">
+      <div class="solution-container">
+        <div class="left-section-solution" data-reveal="left">
+          <div class="image-container-solution">
+            <img
+              src="assets/images/asset & emoji/img1.png"
+              alt=""
+              width="500"
+              id="gambar"
+            />
+          </div>
+        </div>
+        <div class="right-section-solution" data-reveal="right">
+          <div class="solution-title">
+            Apa yang melthy sarankan bila terkena
+            <span class="solution-title-span" style="color: #6765f7"
+              >Penyakit Mental</span
+            >
+          </div>
+          <div class="solution-subtitle">
+            Sebelum melakukan konsultasi, Sobat Melthy perlu tahu apa yang harus
+            kamu lakukan jika terkena penyakit mental ringan Simak penjelasan
+            berikut ini, ya!
+          </div>
+          <div class="solution-options">
+            <div
+              class="listen-music"
+              onmouseover="setImageOne()"
+              style="margin-bottom: 1rem"
+            >
+              <div class="left-box">
+                <img
+                  class="rounded-box rounded-box1"
+                  src="assets/images/asset & emoji/img_emoji_headset (2).png"
+                  alt=""
+                />
+              </div>
+              <div class="right-box">
+                <div class="right-box-title">Mendengarkan lagu favorit</div>
+                <div class="right-box-desc">
+                  Yang paling penting mendengarkan lagu kesukaan kamu
+                </div>
+              </div>
+            </div>
+            <div
+              class="listen-music"
+              onmouseover="setImageTwo()"
+              style="margin-bottom: 1rem"
+            >
+              <div class="left-box">
+                <img
+                  class="rounded-box rounded-box2"
+                  src="assets/images/asset & emoji/img_emoji_umbrella.png"
+                  alt=""
+                />
+              </div>
+              <div class="right-box">
+                <div class="right-box-title">Staycation di Bali</div>
+                <div class="right-box-desc">
+                  Kamu bisa mencoba hal yang baru agar dunia berwarna
+                </div>
+              </div>
+            </div>
+            <div
+              class="listen-music"
+              onmouseover="setImageThree()"
+              style="margin-bottom: 1rem"
+            >
+              <div class="left-box">
+                <img
+                  class="rounded-box rounded-box3"
+                  src="assets/images/asset & emoji/img_emoji_bed.png"
+                  alt=""
+                />
+              </div>
+              <div class="right-box">
+                <div class="right-box-title">Melakukan meditasi</div>
+                <div class="right-box-desc">
+                  Mendatangi tempat meditasi atau yoga bisa pilihan terbaik kamu
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *__________________________Akhir Dari Bagian Solusi__________________________ -->
+
+    <!-- #########################################################################-->
+
+    <!-- *relawan* -->
+    <!-- *__________________________Mulai Dari Bagian relawan__________________________* -->
+    <div
+      class="event-available wave-no-repeat"
+      style="
+        padding-bottom: 13rem;
+        background-image: url('./assets/images/wave/wave6.svg');
+      "
+    >
+      <div class="event-available-container">
+        <div class="left-side-event" data-reveal="left">
+          <div class="event-available-title">Ikut Serta Menjadi Relawan</div>
+          <div class="event-available-desc">
+            Melthy membuka relawan untuk kamu yang ingin membantu sesama, kamu
+            tertarik?, silahkan menghubungi kami untuk informasi lebih lanjut.
+          </div>
+          <div class="event-available-button">Gabung sekarang</div>
+        </div>
+
+        <div class="right-side-event" data-reveal="right">
+          <div class="event-available-card">
+            <img src="assets/images/person/anna.png" alt="" />
+            <div class="event-available-content">
+              " Aku merasa sedang melakukan pekerjaan penting membantu mereka
+              yang membutuhkan dan memperluas pemahaman Aku tentang masalah
+              kesehatan mental sehingga dapat menjadi referensi untuk skripsi
+              akhir saya. aku senang bisa berkontribusi dalam Perawatan
+              kesehatan di Melthy. "
+            </div>
+            <div class="event-available-wrap">
+              <div class="event-available-profile">
+                Putri Kiana Aleia
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  />
+                </svg>
+              </div>
+              <div class="event-available-job">Mahasiswi UI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *__________________________Akhir Dari Bagian relawan__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Event2* -->
+    <!-- *__________________________Mulai Dari Bagian Event2__________________________* -->
+    <div
+      class="kegiatan-container wave-no-repeat"
+      style="background-image: url('./assets/images/wave/wave7.svg')"
+    >
+      <div class="kegiatan-title" data-reveal="left">
+        <p>Aktifitas Terbaru</p>
+      </div>
+      <div
+        class="kegiatan-content"
+        data-reveal="right"
+        style="padding-bottom: 3rem"
+      >
+        <div class="kegiatan-card">
+          <div class="kegiatan-card-img">
+            <img src="/assets/images/kegiatan/kegiatan1.jpeg" alt="" />
+          </div>
+          <div class="kegiatan-wrap">
+            <div class="kegiatan-card-date">
+              <p>23/05/2023</p>
+            </div>
+            <div class="kegiatan-card-desc">
+              <p>Kegiatan Berbagi bersama di Kecamatan Palmerah</p>
+            </div>
+            <div class="kegiatan-card-read">
+              <hr />
+              <a href="/pages/berita.html"><p>Lanjut membaca</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="kegiatan-card">
+          <div class="kegiatan-card-img">
+            <img src="/assets/images/kegiatan/kegiatan2.jpeg" alt="" />
+          </div>
+          <div class="kegiatan-wrap">
+            <div class="kegiatan-card-date">
+              <p>23/05/2023</p>
+            </div>
+            <div class="kegiatan-card-desc">
+              <p>Senam bersama di RPTRA Sukapura</p>
+            </div>
+            <div class="kegiatan-card-read">
+              <hr />
+              <a href="/pages/berita2.html"><p>Lanjut membaca</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="kegiatan-card">
+          <div class="kegiatan-card-img">
+            <img src="/assets/images/kegiatan/kegiatan3.jpeg" alt="" />
+          </div>
+          <div class="kegiatan-wrap">
+            <div class="kegiatan-card-date">
+              <p>23/05/2023</p>
+            </div>
+            <div class="kegiatan-card-desc">
+              <p>Kegiatan bersih bersih bersama di Kelurahan Kelapa Gading</p>
+            </div>
+            <div class="kegiatan-card-read">
+              <hr />
+              <a href="/pages/berita3.html"><p>Lanjut membaca</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="kegiatan-card">
+          <div class="kegiatan-card-img">
+            <img src="/assets/images/kegiatan/kegiatan4.jpeg" alt="" />
+          </div>
+          <div class="kegiatan-wrap">
+            <div class="kegiatan-card-date">
+              <p>23/05/2023</p>
+            </div>
+            <div class="kegiatan-card-desc">
+              <p>Kegiatan Family Gathering di Istana Bogor</p>
+            </div>
+            <div class="kegiatan-card-read">
+              <hr />
+              <a href="/pages/berita4.html"><p>Lanjut membaca</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="kegiatan-card">
+          <div class="kegiatan-card-img">
+            <img src="/assets/images/kegiatan/kegiatan6.jpeg" alt="" />
+          </div>
+          <div class="kegiatan-wrap">
+            <div class="kegiatan-card-date">
+              <p>23/05/2023</p>
+            </div>
+            <div class="kegiatan-card-desc">
+              <p>Olahraga Yoga bersama di Fit Lab , Kelapa Gading</p>
+            </div>
+            <div class="kegiatan-card-read">
+              <hr />
+              <a href="/pages/berita5.html"><p>Lanjut membaca</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *__________________________Akhir Dari Bagian Event2__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Event* -->
+    <!-- *__________________________Mulai Dari Bagian Event__________________________* -->
+    <div class="event">
+      <div class="event-container">
+        <div class="event-title" data-reveal>Upcoming Event</div>
+        <hr />
+        <div class="event-list-container">
+          <div class="event-list-item" data-reveal>
+            <div class="event-image-container">
+              <img
+                style="width: 100%"
+                src="assets/images/kegiatan/melthy-upcoming-event.png"
+                alt=""
+              />
+            </div>
+            <div class="event-title-content">
+              Mengadakan Fun Match Sepak Bola Bersama Melthy
+            </div>
+            <div class="event-desc-content">
+              <div class="event-desc-first">
+                Pada tanggal 30/10/2023 melthy akan mengadakan fun match dengan
+                para relawan dan sobat melthy 😆, tunggu apa lagi!, hubungi kami
+                jika kamu tertarik!
+              </div>
+              <div class="event-desc-button">Remind me</div>
+            </div>
+          </div>
+          <hr />
+          <div class="event-list-item" data-reveal>
+            <div class="event-image-container">
+              <img
+                style="width: 90%; margin-top: -2rem"
+                src="assets/images/kegiatan/melthy-upcoming-event2.png"
+                alt=""
+              />
+            </div>
+            <div class="event-title-content">
+              Senam Bersama Dengan Warga Kelapa Gading
+            </div>
+            <div class="event-desc-content">
+              <div class="event-desc-first">
+                Siapa yang uda ga sabar nih 😊, pada tanggal 25/10/2023 melthy
+                akan mengadakan senam bersama dengan warga kelapa gading!, bagi
+                kamu yang ingin ikutan silahkan hubungi kami, karna kuota
+                terbatas lho!
+              </div>
+              <div class="event-desc-button">Remind me</div>
+            </div>
+          </div>
+          <hr />
+          <div class="event-list-item" data-reveal>
+            <div class="event-image-container">
+              <img
+                style="width: 100%; margin-left: -1.3rem"
+                src="assets/images/kegiatan/melthy-upcoming-event3.png"
+                alt=""
+              />
+            </div>
+            <div class="event-title-content">
+              Mengadakan Yoga Bersama Di Kantor Pusat Melthy
+            </div>
+            <div class="event-desc-content">
+              <div class="event-desc-first">
+                Melthy akan mengadakan yoga bersama lho!, untuk pertama kalinya
+                lagi melthy akan mengadakan acara di kantor pusat, tunggu apa
+                lagi, bagi kamu yang ingin ikutan silahkan mendaftar diri dengan
+                cara menghubungi kami, ingat kuota terbatas siapa cepat dia
+                dapat! 🥰
+              </div>
+              <div class="event-desc-button">Remind me</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *__________________________Akhir Dari Bagian Event__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Media* -->
+    <!-- *__________________________Mulai Dari Bagian Media__________________________* -->
+    <div class="media-partner wave-no-repeat">
+      <div class="media-partner-container" data-reveal>
+        <div class="media-box-container">
+          <div class="left-media-section">
+            <div class="media-title">
+              Our Media <span style="color: #6765f7">Partner</span>
+            </div>
+            <div class="media-desc">
+              Melthy sudah banyak diliput oleh media terkenal, Tentunya Melthy
+              sudah menjadi buah bibir dimana mana, bahkan di seluruh Indonesia!
+              <div style="margin-top: 3rem">
+                <a href="#contact-us" class="button button-radius">
+                  Info lebih lanjut <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right-review">
+            <div class="review-card-container-first">
+              <div class="review-card-items" style="margin-right: 20px">
+                <img src="assets/images/Liputan/cbn_news.png" alt="" />
+              </div>
+              <div class="review-card-items" style="margin-right: 20px">
+                <img src="assets/images/Liputan/CikiniNews.png" alt="" />
+              </div>
+              <div class="review-card-items" style="margin-right: 20px">
+                <img src="assets/images/Liputan/news_IDN.png" alt="" />
+              </div>
+              <div class="review-card-items" style="margin-right: 20px">
+                <img src="assets/images/Liputan/reporter.com.png" alt="" />
+              </div>
+              <div class="review-card-items" style="margin-right: 20px">
+                <img src="assets/images/Liputan/rpl_news.png" alt="" />
+              </div>
+            </div>
+            <div class="review-card-container">
+              <div class="review-card-item-second">
+                <img src="assets/images/Liputan/sEA_Lanews.png" alt="" />
+              </div>
+              <div class="review-card-item-second">
+                <img src="assets/images/Liputan/The_jakarta_times.png" alt="" />
+              </div>
+              <div class="review-card-item-second">
+                <img src="assets/images/Liputan/uss_times.png" alt="" />
+              </div>
+              <div class="review-card-item-second"></div>
+              <div class="review-card-item-second"></div>
+              <div class="review-card-item-second"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *__________________________Akhir Dari Bagian Media__________________________* -->
+
+    <!-- #########################################################################-->
+
+    <!-- *Contact* -->
+    <!-- *__________________________Mulai Dari Bagian contact__________________________* -->
+    <div
+      id="contact-us"
+      class="contact-us wave-no-repeat"
+      style="background-image: url('./assets/images/wave/wave10.svg')"
+    >
+      <div class="contact-us-container">
+        <div class="left-contact" data-reveal="left">
+          <img src="assets/images/asset & emoji/mail.png" alt="" />
+          <div class="mail-title">
+            Kamu tertarik dengan melthy?, atau ingin mengikuti acara event
+            melthy?
+          </div>
+          <div class="mail-desc">
+            silahkan untuk mengisi data diri disini, dan tuliskan apa masalah
+            kamu atau ingin mengikuti event apa, kami pesan tunggu dari kamu!
+          </div>
+        </div>
+        <div class="right-contact" data-reveal="right">
+          <div class="form-first-container">
+            <input type="text" placeholder="Name" class="name-input" />
+            <input type="text" placeholder="Email" class="email-input" />
+          </div>
+          <div class="text-area">
+            <textarea name="" id="" rows="8" placeholder="Message"></textarea>
+          </div>
+
+          <div class="button-send">Kirim pesan</div>
+        </div>
+      </div>
+    </div>
+    <!-- *__________________________Akhir Dari Bagian Contact__________________________* -->
+
+    <!-- #########################################################################-->
+    <!-- *Footer* -->
+    <!-- *__________________________Mulai Dari Bagian Footer__________________________* -->
+    <div class="footers">
+      <footer style="padding-top: 5rem">
+        <div class="row-0 col col1" data-aos="fade-right">
+          <img
+            src="/assets/images/Logo.png"
+            alt="gambar logo moiseum"
+            style="width: 7rem"
+          />
+          <h1>Melthy</h1>
+        </div>
+        <div class="row">
+          <div class="col col2" data-aos="fade-right">
+            <ul>
+              <li class="title-footer">
+                <a href="/index.html">Dokter</a>
+              </li>
+              <li>
+                <a href="/index.html">Home</a>
+              </li>
+              <li>
+                <a href="#solution">Perawatan</a>
+              </li>
+              <li>
+                <a href="#review">Layanan</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#contact-us">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col2" data-aos="fade-right">
+            <ul>
+              <li class="title-footer">
+                <a href="/index.html">Layanan</a>
+              </li>
+              <li>
+                <a href="/index.html">Home</a>
+              </li>
+              <li>
+                <a href="#solution">Perawatan</a>
+              </li>
+              <li>
+                <a href="#review">Layanan</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#contact-us">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col2 disable" data-aos="fade-right">
+            <ul>
+              <li class="title-footer">
+                <a href="/index.html">Relawan</a>
+              </li>
+              <li>
+                <a href="/index.html">Home</a>
+              </li>
+              <li>
+                <a href="#solution">Perawatan</a>
+              </li>
+              <li>
+                <a href="#review">Layanan</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#contact-us">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col2 disable" data-aos="fade-right">
+            <ul>
+              <li class="title-footer">
+                <a href="/index.html">Akun</a>
+              </li>
+              <li>
+                <a href="/index.html">Home</a>
+              </li>
+              <li>
+                <a href="#solution">Perawatan</a>
+              </li>
+              <li>
+                <a href="#review">Layanan</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#contact-us">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col3" data-aos="fade-right">
+            <h3>JADILAH YANG PERTAMA UNTUK MENDENGAR KABAR DARI KAMI</h3>
+            <input type="text" />
+            <span>E-MAIL</span>
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+        <div class="footernya-footer">
+          <div class="title-footer-again">
+            <h3 style="font-weight: 300 !important">
+              Copyright © 2023 Melthy. All rights reserved.
+            </h3>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- *__________________________Akhir Dari Bagian Footer__________________________* -->
+
+    <!-- *Main JSnya* -->
+
+    <script src="js/main.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/main-home.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/gejala.js"></script>
+    <script src="js/animatedOnScroll.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- #########################################################################-->
+  </body>
+</html>

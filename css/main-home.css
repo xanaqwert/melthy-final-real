@@ -1,0 +1,484 @@
+/* <!-- *Main* -->
+Ini adalah css dari bagian/section main home (hero utama)
+<!-- *__________________________Mulai Dari Bagian Main__________________________* -->
+
+/* 
+*____Link fontnya____*
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;500&display=swap");
+
+@font-face {
+  font-family: "Gelica";
+  src: url("/assets/Fonts/gelica_medium2.otf") format("gelica1");
+}
+/*<!-- #########################################################################-->*/
+
+/* 
+*____ Universal Selector ____*
+*/
+body,
+html {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+}
+
+body {
+  background-color: white;
+  color: hsl(260, 24%, 32%);
+  transition: background 0.4s; /* For dark mode animation */
+}
+
+a {
+  text-decoration: none;
+}
+/*<!-- #########################################################################-->*/
+
+/* 
+*____ CSS Utama dan Daur Ulang ____*
+*/
+.wave-no-repeat {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wave-no-repeat2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container__home {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Lora", serif;
+  margin-bottom: 1.5rem;
+}
+
+.main {
+  overflow: hidden;
+}
+/*<!-- #########################################################################-->*/
+
+/* 
+*____ Bagian CSS UTAMA home__mainnya ____*
+*/
+.home__main__container {
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
+
+.home__main__data {
+  text-align: center;
+}
+
+.home__main__title {
+  font-size: 2.75rem;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  line-height: 135%;
+  /* letter-spacing: -3px; */
+  position: relative;
+  width: max-content;
+  margin: 0 auto 1.25rem;
+  color: #220953;
+}
+
+.home__main__title-box {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.75rem;
+}
+
+.home__main__title-box div {
+  background: linear-gradient(
+    -90deg,
+    hsl(258, 77%, 61%) 30%,
+    hsl(245, 77%, 60%) 90%
+  );
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  transform: rotate(10deg);
+}
+
+.home__main__title img {
+  position: absolute;
+  width: 50px;
+  left: -1rem;
+  bottom: 1rem;
+}
+
+.home__main__description {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.home__main__description img {
+  position: absolute;
+  width: 16px;
+  right: 4rem;
+  bottom: -1rem;
+}
+
+.home__main__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+  margin-top: 2rem;
+}
+
+.home__main__box h3 {
+  font-size: 1.75rem;
+  font-family: "Lora", serif;
+}
+
+.home__main__box span {
+  font-size: 0.813rem;
+}
+
+.home__main__img {
+  width: 320px;
+  justify-self: center;
+}
+
+.h3__title {
+  font-weight: 400;
+}
+
+.transform-rekan:hover {
+  cursor: pointer;
+  transform: rotate(0);
+}
+
+.transform-rekan {
+  transition: transform 0.3s;
+  transform: rotate(-10deg);
+}
+/*<!-- #########################################################################-->*/
+
+/* 
+*____ Bagian CSS button ____*
+*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  background: linear-gradient(
+    -90deg,
+    hsl(258, 77%, 61%) 30%,
+    hsl(245, 77%, 60%) 90%
+  );
+  padding: 1rem 1.8rem;
+  border-radius: 4rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+.button i {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.button:hover i {
+  transform: translateX(0.25rem);
+}
+/*<!-- #########################################################################-->*/
+
+/* 
+*____ Bagian CSS Responsive ____*
+*/
+
+/* *Layar kecil */
+@media screen and (max-width: 345px) {
+  .container__home {
+    margin-inline: 1rem;
+  }
+}
+/* *layar lebih besar  */
+@media screen and (max-width: 576px) {
+  .home__main__img {
+    width: 340px !important;
+  }
+  .home__main__title {
+    font-size: 3rem !important;
+  }
+}
+/* *layar besar */
+@media screen and (max-width: 756px) {
+  .grid .home__main__data:nth-of-type(1) {
+    order: 2;
+  }
+
+  .grid .home__main__img:nth-of-type(2) {
+    order: 1;
+  }
+
+  .home__main__img {
+    width: 450px;
+  }
+
+  .home__main__title {
+    margin-top: -2rem;
+    font-size: 3rem;
+  }
+
+  .home__main__description {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 1rem;
+    display: flex;
+  }
+}
+
+/* *layar besar */
+@media screen and (min-width: 757px) {
+  /* copy an */
+  .home__main__container {
+    grid-template-columns: repeat(2, 400px);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home__main__data {
+    text-align: initial;
+  }
+
+  .home__main__title {
+    margin: 0 0 1.25rem;
+  }
+
+  .home__main__title-box,
+  .home__main__box {
+    justify-content: initial;
+  }
+
+  .home__main__title img {
+    left: initial;
+    right: 0;
+  }
+
+  .home__main__title {
+    font-size: 3rem;
+  }
+
+  .container__home {
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: 7rem 1.5rem;
+  }
+
+  .home__main__container {
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  .home__main__img {
+    width: 450px;
+  }
+
+  .home__main__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .home__main__title-box {
+    column-gap: 1.5rem;
+  }
+
+  .home__main__title div {
+    border-radius: 1rem;
+  }
+
+  .home__main__title img {
+    width: 95px;
+    top: 10rem;
+    right: -1.5rem;
+  }
+
+  .home__main__description {
+    margin-bottom: 2rem;
+    padding-right: 5rem;
+  }
+
+  .home__main__description img {
+    width: 24px;
+    top: -2rem;
+    left: -2rem;
+  }
+
+  .home__main__box {
+    margin-top: 3rem;
+    column-gap: 4rem;
+  }
+}
+
+/* *Untuk Tablet */
+@media screen and (min-width: 915px) {
+  /* copy an  jadi agak banyak*/
+  .home__main__title {
+    font-size: 4rem;
+  }
+
+  .container__home {
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: 7rem 1.5rem;
+  }
+
+  .home__main__container {
+    grid-template-columns: repeat(2, 400px);
+  }
+
+  .home__main__img {
+    margin-right: -5rem;
+    width: 550px;
+  }
+
+  .home__main__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .home__main__title-box {
+    column-gap: 1.5rem;
+  }
+
+  .home__main__title div {
+    border-radius: 1rem;
+  }
+
+  .home__main__title img {
+    width: 95px;
+    top: 10rem;
+    right: -1.5rem;
+  }
+
+  .home__main__description {
+    margin-bottom: 2rem;
+    padding-right: 5rem;
+  }
+
+  .home__main__description img {
+    width: 24px;
+    top: -2rem;
+    left: -2rem;
+  }
+
+  .home__main__box {
+    margin-top: 3rem;
+    column-gap: 4rem;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .container__home {
+    margin-inline: auto;
+  }
+
+  .home__main__title {
+    font-size: 6rem;
+  }
+
+  .section {
+    padding-block: 7rem 1.5rem;
+  }
+
+  .home__main__container {
+    grid-template-columns: repeat(2, 500px);
+  }
+
+  .home__main__img {
+    width: 500px;
+  }
+
+  .home__main__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .home__main__title-box {
+    column-gap: 1.5rem;
+  }
+
+  .home__main__title div {
+    border-radius: 1rem;
+  }
+
+  .home__main__title img {
+    width: 95px;
+    top: 10rem;
+    right: -1.5rem;
+  }
+
+  .home__main__description {
+    margin-bottom: 2rem;
+    padding-right: 5rem;
+  }
+
+  .home__main__description img {
+    width: 24px;
+    top: -2rem;
+    left: -2rem;
+  }
+
+  .home__main__box {
+    margin-top: 3rem;
+    column-gap: 4rem;
+  }
+}
+
+@media screen and (min-width: 1248px) {
+  .home__main__container {
+    grid-template-columns: 500px 600px;
+    justify-content: initial;
+  }
+
+  .home__main__img {
+    width: 650px;
+  }
+}
+
+/* *Untuk layar yang ber-resolusi 2K */
+@media screen and (min-width: 2000px) {
+  .container__home {
+    max-width: 1250px;
+  }
+
+  .home__main__container {
+    justify-content: space-between;
+  }
+}
+/* <!-- *_________________________Akhir Dari Bagian CSS Main__________________________* -->
+<!-- #########################################################################--> 
+*/
+
+/* 
+*____  ____*
+*/
+
+/* <!-- #########################################################################-->  */

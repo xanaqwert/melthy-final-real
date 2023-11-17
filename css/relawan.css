@@ -1,0 +1,385 @@
+/* <!-- *relawan* -->
+Ini adalah css dari bagian/section dari relawan
+<!-- *__________________________Mulai Dari Bagian relawan__________________________* -->
+*/
+
+/* 
+*____ Bagian Utama Relawan ____*
+*/
+.event-available {
+  padding-top: 100px;
+}
+.event-available-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.event-available-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  max-width: 350px;
+  color: #3b3b3b;
+}
+
+.event-available-desc {
+  font-size: 1rem;
+
+  margin-bottom: 10px;
+  max-width: 400px;
+  color: #919191;
+}
+
+.event-available-button {
+  width: 180px;
+  height: 55px;
+  background-color: #6765f7;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-available-button:hover {
+  background-color: #5a59e8;
+  transition: 0.5s ease-in-out;
+}
+
+.event-available-card {
+  width: 400px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  position: relative;
+}
+
+.event-available-card img {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  width: 30%;
+}
+
+.event-available-content {
+  font-size: 0.9rem;
+}
+
+.event-available-wrap {
+  margin-top: 60px;
+}
+
+.event-available-profile {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.event-available-profile svg {
+  margin-left: 12px;
+}
+
+.event-available-job {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 5px;
+  max-width: 300px;
+  color: #919191;
+}
+
+@media screen and (max-width: 900px) {
+  .event-available {
+    padding-bottom: 7rem !important;
+  }
+
+  .event-available-container {
+    flex-direction: column;
+  }
+  .event-available-card {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .left-side-event {
+    order: 2;
+  }
+
+  .right-side-event {
+    display: flex;
+    justify-content: center;
+    order: 1;
+    margin-bottom: 70px;
+  }
+
+  .event-available-wrap {
+    margin-top: 0px;
+  }
+}
+.event {
+  padding-top: 100px;
+}
+.event-container {
+  width: 90%;
+  margin: auto;
+}
+
+.event-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  max-width: 300px;
+  color: #3b3b3b;
+}
+
+hr {
+  border-top: 2px dashed #5a59e8;
+}
+.event-list-container {
+  margin-top: 50px;
+}
+
+.event-image-container {
+  width: 250px;
+  height: 250px;
+}
+
+.event-list-item {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.event-desc-first {
+  max-width: 300px;
+}
+
+.event-title-content {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  max-width: 300px;
+  color: #3b3b3b;
+}
+
+.event-desc-button {
+  width: 140px;
+  height: 55px;
+  background-color: #6765f7;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-desc-button:hover {
+  background-color: #5a59e8;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+  .event-list-item {
+    flex-direction: column;
+  }
+
+  .event-desc-first {
+    margin-top: 10px;
+  }
+  .event-image-container {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+.media-partner-container {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.media-partner-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  max-width: 300px;
+  color: #3b3b3b;
+}
+
+.media-box-container {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.left-media-section {
+  padding-left: 40px;
+  padding-top: 80px;
+}
+.media-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  max-width: 300px;
+  color: #3b3b3b;
+  line-height: 60px;
+}
+
+.media-desc {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  max-width: 300px;
+  color: #aaaaaa;
+}
+
+.right-review {
+  display: flex;
+}
+
+.review-card-container-first {
+  overflow-y: hidden;
+}
+.review-card-container {
+  overflow-y: hidden;
+}
+
+@keyframes atascard {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes bawahcard {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes kanananjay {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes kirianjay {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateX(400px);
+  }
+}
+.review-card-items {
+  animation: 5s atascard infinite linear;
+}
+
+.review-card-item-second {
+  animation: 5s bawahcard infinite linear;
+}
+
+@media screen and (max-width: 1000px) {
+  .review-main-box {
+  }
+}
+.review-card-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-card-items img {
+  width: 150px;
+}
+
+.review-card-item-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-card-item-second img {
+  width: 150px;
+}
+
+.review-card-items {
+  min-width: 300px;
+  height: 150px;
+  background-color: #fbfbfb;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.review-card-item-second {
+  min-width: 300px;
+  height: 150px;
+  background-color: #fbfbfb;
+  border-radius: 30px 0px 0px 30px;
+  margin-bottom: 20px;
+}
+
+.media-box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .media-box-container {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .right-review {
+    flex-direction: column;
+  }
+  .review-card-container-first {
+    overflow-x: hidden;
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .review-card-container {
+    overflow-x: hidden;
+    display: flex;
+  }
+  .review-card-items {
+    animation: 5s kanananjay infinite linear;
+  }
+
+  .review-card-item-second {
+    animation: 5s kirianjay infinite linear;
+    border-radius: 30px;
+    margin-right: 20px;
+  }
+}

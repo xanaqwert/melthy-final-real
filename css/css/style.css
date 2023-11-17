@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+html {
+  font-family: DM Sans, sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f8fc;
+  color: hsl(225, 8%, 48%);
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.container {
+  padding-inline: 15px;
+}
+
+.section {
+  padding-block: 100px;
+}
+
+.h1,
+.h2 {
+  letter-spacing: -2px;
+}
+
+.h1 {
+  color: hsl(0, 0%, 0%);
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.h2,
+.h3 {
+  color: hsl(240, 8%, 17%);
+}
+
+.h2 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.h3 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+}
+
+:is(.h1, .h2) .has-before {
+  display: inline-block;
+}
+
+:is(.h1, .h2) .has-before::before {
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: hsl(47, 100%, 69%);
+  z-index: -1;
+}
+
+.social-list {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.section-subtitle {
+  color: hsl(225, 11%, 59%);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.section-subtitle::before {
+  position: static;
+  width: 12px;
+  height: 12px;
+  background-color: hsl(47, 100%, 69%);
+  display: inline-block;
+  border-radius: 50%;
+  margin-inline-end: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  margin-block: 30px 50px;
+}
+
+.grid-list {
+  display: grid;
+  gap: 30px;
+}
+
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: hsl(0, 0%, 80%);
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service {
+  background-color: hsl(230, 60%, 98%);
+}
+
+.service .section-title {
+  margin-block: 30px 60px;
+}
+
+.service-card,
+.service .link-card {
+  padding: 45px;
+  border-radius: 20px;
+}
+
+.service-card {
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  padding-block-end: 40px;
+  border-block-end: 3px solid transparent;
+  box-shadow: 0px 4px 4px hsla(231, 20%, 49%, 0.06);
+  transition: 0.25s ease;
+}
+
+.service-card:is(:hover, :focus-within) {
+  border-color: hsl(var(--color));
+}
+
+.service-card .card-icon {
+  max-width: max-content;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: hsla(var(--color), 0.15);
+  margin-block-end: 25px;
+  transition: 0.5s ease;
+}
+
+.service-card:is(:hover, :focus-within) .card-icon {
+  transform: rotateY(0.5turn);
+}
+
+.service-card .card-title {
+  transition: 0.25s ease;
+}
+
+.service-card .card-title:is(:hover, :focus-within) {
+  color: hsl(var(--color));
+}
+
+.service .link-card {
+  background-color: hsla(var(--color), 0.15);
+  text-align: center;
+}
+
+.service .link-card .span {
+  color: hsl(240, 8%, 17%);
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-block-end: 20px;
+  transition: 0.25s ease;
+}
+
+.service .link-card:is(:hover, :focus) .span {
+  color: hsl(241, 77%, 63%);
+}
+
+.service .link-card ion-icon {
+  color: hsl(241, 77%, 63%);
+  font-size: 150px;
+  transform: rotate(-45deg);
+  margin: -25px auto;
+  transition: 0.25s ease;
+}
+
+.service .link-card:is(:hover, :focus) ion-icon {
+  color: hsl(var(--color));
+}
+
+/**
+ * responsive untuk layar lebih dari 575px
+ */
+
+@media (min-width: 575px) {
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .container {
+    max-width: unset;
+  }
+}
+
+/**
+ * responsive untuk layar lebih dari 768px
+ */
+
+@media (min-width: 768px) {
+  .h1 {
+    font-size: 5.5rem;
+  }
+
+  .h2 {
+    font-size: 3.8rem;
+  }
+
+  .feature-card .card-text {
+    font-size: 1.8rem;
+  }
+  .section {
+    padding-block: 120px;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+
+  .btn {
+    height: 60px;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project .grid-list > li:first-child {
+    grid-column: 1 / 3;
+  }
+}
+
+/**
+ * responsive untuk layar lebih dari 992px 
+ */
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .btn {
+    height: 70px;
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .feature .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .filter-btn {
+    font-size: 1.8rem;
+    padding: 20px 25px;
+  }
+}
+
+/**
+ * responsive untuk layar lebih dari 1200px 
+ */
+
+@media (min-width: 1200px) {
+  .h1 {
+    font-size: 5.5rem;
+  }
+
+  .h2 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
+
+  .container {
+    max-width: 1140px;
+  }
+
+  .section-title.text-center {
+    max-width: 20ch;
+    margin-inline: auto;
+  }
+
+  .container {
+    padding-inline: 30px;
+  }
+
+  .service .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .service-card .h3 {
+    font-size: 2rem;
+  }
+  .filter-btn {
+    padding-inline: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .disable-icon {
+    display: none;
+  }
+  .filter-list {
+    justify-content: center;
+    padding: 12px;
+    font-size: 25px;
+    max-width: 80%;
+  }
+}

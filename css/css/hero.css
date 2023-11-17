@@ -1,0 +1,259 @@
+.container-halaman-utama {
+  padding-inline: 16px;
+}
+
+.headline-lg {
+  font-size: 5rem;
+  color: #220953;
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 54px;
+}
+
+.headline-md {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.headline-md,
+.headline-sm {
+  line-height: 1.3;
+}
+
+.headline-md,
+.headline-sm {
+  color: #f6f1ff;
+}
+
+.headline-sm {
+  font-size: 2rem;
+}
+
+.title-lg {
+  font-size: 1.8rem;
+}
+
+.title-md {
+  font-size: 1.5rem;
+}
+
+.title-sm {
+  font-size: 1.4rem;
+}
+
+.social-list {
+  display: flex;
+}
+
+.section-halaman-utama {
+  padding-block: 120px;
+}
+
+.has-before-halaman-utama,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before-halaman-utama::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+}
+
+.testing::before {
+  background-color: #220953 !important;
+}
+
+.btn-halaman-utama {
+  background: linear-gradient(
+    -90deg,
+    hsl(258, 77%, 61%) 30%,
+    hsl(245, 77%, 60%) 90%
+  );
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  padding: 12px 36px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.btn-halaman-utama::before {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: hsl(245, 77%, 60%) 90%;
+  border-radius: 6px;
+  transition: 0.5s ease;
+  z-index: -1;
+}
+
+.btn-halaman-utama:is(:hover, :focus-visible)::before {
+  transform: translateX(100%);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hero-halaman-utama-banner {
+  display: none;
+}
+
+.hero-halaman-utama {
+  background-color: #f6f1ff;
+  padding-block: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-halaman-utama-subtitle {
+  color: #220953;
+  font-weight: 500;
+  padding-inline-start: 80px;
+}
+
+.hero-halaman-utama-subtitle::before {
+  top: 50%;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.hero-halaman-utama-title {
+  margin-block: 20px 30px;
+}
+
+.hero-halaman-utama-card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12;
+  padding: 20px;
+}
+
+.hero-halaman-utama-card .card-text-halaman-utama {
+  color: hsl(0, 0%, 13%);
+  border-block-end: 1px solid hsla(186, 100%, 19%, 0.25);
+  padding-block-end: 12px;
+  margin-block-end: 14px;
+}
+
+.hero-halaman-utama-card .input-wrapper-halaman-utama {
+  position: relative;
+}
+
+.hero-halaman-utama-card .input-field {
+  color: hsl(0, 0%, 13%);
+  border-block-end: 1px solid hsl(0, 0%, 87%);
+  padding-inline-end: 18px;
+}
+
+.hero-halaman-utama-card .input-wrapper-halaman-utama ion-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: hsl(245, 77%, 60%);
+}
+
+.hero-halaman-utama-card .btn-halaman-utama {
+  width: 100%;
+  justify-content: center;
+  margin-block-start: 16px;
+}
+
+/**
+   * responsive untuk layar lebih dari 768px
+   */
+
+@media (min-width: 768px) {
+  .headline-lg {
+    font-size: 8rem;
+  }
+  .headline-md {
+    font-size: 4.8rem;
+  }
+
+  .container-halaman-utama {
+    max-width: 750px;
+    width: 100%;
+    margin-inline: auto;
+  }
+  .container-halaman-utama {
+    gap: 40px;
+  }
+  .hero-halaman-utama-title {
+    line-height: 1.125;
+  }
+
+  /* .hero-halaman-utama  */
+  .wrapper-halaman-utama {
+    display: flex;
+    gap: 16px;
+  }
+
+  .hero-halaman-utama-card .input-wrapper-halaman-utama {
+    flex-grow: 1;
+  }
+
+  .hero-halaman-utama-card .input-field {
+    height: 100%;
+  }
+
+  .hero-halaman-utama-card .btn-halaman-utama {
+    width: max-content;
+    margin-block-start: 0;
+  }
+}
+
+/**
+   * responsive untuk layar lebih dari 992px
+   */
+
+@media (min-width: 992px) {
+  .container-halaman-utama {
+    max-width: 940px;
+  }
+
+  /**
+     * hero-halaman-utama
+     */
+
+  .hero-halaman-utama-banner {
+    display: block;
+    max-width: max-content;
+  }
+
+  .hero-halaman-utama .container-halaman-utama {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .container-halaman-utama {
+    grid-template-columns: 1fr 0.8fr;
+    align-items: flex-end;
+  }
+}
+
+/**
+   * responsive untuk layar lebih dari 1200px
+   */
+
+@media (min-width: 1200px) {
+  .container-halaman-utama {
+    max-width: 1200px;
+  }
+
+  .container-halaman-utama {
+    grid-template-columns: 0.8fr 1fr;
+    gap: 96px;
+  }
+}
